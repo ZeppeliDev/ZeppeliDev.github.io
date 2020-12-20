@@ -1,8 +1,13 @@
 package main
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"os"
+
+	"github.com/gofiber/fiber/v2"
+)
 
 func main() {
+	port := os.Getenv("PORT")
 	app := fiber.New()
 
 	/*app.Get("/", func(c *fiber.Ctx) error {
@@ -18,5 +23,5 @@ func main() {
 		return c.SendFile("static/404.html")
 	})
 
-	app.Listen(":5000")
+	app.Listen(":" + port)
 }
