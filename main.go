@@ -8,9 +8,7 @@ func main() {
 	/*app.Get("/", func(c *fiber.Ctx) error {
 	        return c.SendString("Hello, World 👋!")
 		})*/
-	app.Static("/", "./static", fiber.Static{
-		CacheDuration: -1,
-	})
+	app.Static("/", "./static")
 
 	app.Get("/test", func(c *fiber.Ctx) error {
 		return c.SendFile("static/test.html")
@@ -20,5 +18,5 @@ func main() {
 		return c.SendFile("static/404.html")
 	})
 
-	app.Listen(":3000")
+	app.Listen(":5000")
 }
