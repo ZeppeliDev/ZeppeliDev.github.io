@@ -1,6 +1,6 @@
 module github.com/ZeppeliDev/ZeppeliDev.git
 
-go 1.15
+go 1.12.17
 
 require (
 	github.com/andybalholm/brotli v1.0.1 // indirect
