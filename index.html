@@ -3,16 +3,37 @@
     <head>
         <title>Zeppeli</title>
         <link rel="stylesheet" href="css/style.css" />
-        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
-    <body>
+    <body class="mdc-typography">
         <div class="content">
-            <video autoplay playsinline muted preload>
-                <source src="assets/logo/ZeppeliLogoWhite.mp4" />
-            </video>
+            <div class="logo">
+                <video autoplay playsinline muted preload>
+                    <source src="assets/logo/ZeppeliLogoWhite.mp4" />
+                </video>
+                <p>Zeppeli is a group of volunteers that aims to make the design <br>
+                   and development process of software more efficient. 
+                </p>
+            </div> 
+            <div class="projects">
+                <h1 class="mdc-typography--headline4">Projects</h1>
+                <div class="mdc-card">
+                    <div class="card-primary">    
+                        <h2 class="mdc-typography--headline7">Zapp</h2>
+                        <h3 class="mdc-typography--body2">Zapp is a Flutter inspired crossplatform UI Framework for C#. <br>
+                        (Currently in development)</h3> 
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="mdc-typography--headline4">Join us</h1>
+                <p>Interested in joining us ? While we aren't hiring currently, we are always 
+                        looking for volunteers that share our passion for developing opensource software.<br>
+                         Feel free to contact us at: <a href="mailto:contact@zeppeli.dev">contact@zeppeli.dev</a></p>
+            </div>
         </div>
         <script src="js/script.js"></script>
     </body>
